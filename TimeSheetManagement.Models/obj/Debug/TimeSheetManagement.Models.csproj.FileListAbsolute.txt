@@ -1,0 +1,12 @@
+C:\Anmol\Git\Timesheet\WebTimeSheetManagement.Models\bin\Debug\WebTimeSheetManagement.Models.dll
+C:\Anmol\Git\Timesheet\WebTimeSheetManagement.Models\bin\Debug\WebTimeSheetManagement.Models.pdb
+C:\Anmol\Git\Timesheet\WebTimeSheetManagement.Models\obj\Debug\TimeSheetManagement.Models.csproj.AssemblyReference.cache
+C:\Anmol\Git\Timesheet\WebTimeSheetManagement.Models\obj\Debug\TimeSheetManagement.Models.csproj.CoreCompileInputs.cache
+C:\Anmol\Git\Timesheet\WebTimeSheetManagement.Models\obj\Debug\WebTimeSheetManagement.Models.dll
+C:\Anmol\Git\Timesheet\WebTimeSheetManagement.Models\obj\Debug\WebTimeSheetManagement.Models.pdb
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Models\bin\Debug\WebTimeSheetManagement.Models.dll
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Models\bin\Debug\WebTimeSheetManagement.Models.pdb
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Models\obj\Debug\TimeSheetManagement.Models.csproj.AssemblyReference.cache
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Models\obj\Debug\TimeSheetManagement.Models.csproj.CoreCompileInputs.cache
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Models\obj\Debug\WebTimeSheetManagement.Models.dll
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Models\obj\Debug\WebTimeSheetManagement.Models.pdb
