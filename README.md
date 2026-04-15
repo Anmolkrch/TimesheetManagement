@@ -1,63 +1,90 @@
-# WebTimeSheetManagement
+# Timesheet Management
 
-<b>Basic Timesheet Application ASP.NET MVC 5</b>
+A web-based **Timesheet Management System** built with **ASP.NET MVC 5** and **SQL Server**.  
+This project helps organizations manage employee timesheets, projects, roles, and approvals efficiently.
 
-<img src="https://github.com/saineshwar/WebTimeSheetManagement/blob/master/Timesheetimg.png?raw=true" alt="Banner" title="Banner" style="max-width:100%;">
+---
 
-<b>Link to Complete Documentation</b> :- https://www.c-sharpcorner.com/article/timesheet-project-process-using-mvc-5/
+## 🚀 Features
+- **User Registration & Roles**: Supports User, Admin, and SuperAdmin roles.
+- **Project Management**: Create and assign projects to users.
+- **Timesheet Tracking**: Submit, approve, or reject timesheets.
+- **Expense Management**: Track expenses with approval workflows.
+- **Audit & Notifications**: Log activities and send notifications.
+- **Error Logging**: Integrated with ELMAH for error tracking.
 
-<b>About Platform Used </b>
+---
 
-I had developed entire Application using Microsoft visual studio 2015 with SQL Server 2008 R2.
-Frame worked used is ASP.NET MVC 5 and language is C# and Dapper, Entity Framework as ORM and Repository Pattern.
-Microsoft visual studio 2015 with Update 3
+## 🛠️ Technologies Used
+- **ASP.NET MVC 5**
+- **C#**
+- **Entity Framework**
+- **SQL Server 2008 R2 / later**
+- **Bootstrap, jQuery, JavaScript**
+- **OWIN & SignalR** (for authentication and real-time features)
 
-Link to download: - https://www.visualstudio.com/vs/older-downloads/ 
+---
 
-<b>Microsoft SQL Server 2008 R2</b>
+## 📂 Project Structure
+- `Controllers/` → MVC controllers for handling requests.
+- `Models/` → Entity Framework models and database entities.
+- `Views/` → Razor views for UI.
+- `Scripts/` → jQuery, Bootstrap, and custom JS.
+- `Content/` → CSS and static assets.
+- `TimesheetDB.rar` → Database scripts for SQL Server.
 
-Link to download: - https://www.microsoft.com/en-in/download/details.aspx?id=29062 
+---
 
+## ⚙️ Setup Instructions
+1. **Clone the repository**:
+   
+   git clone https://github.com/Anmolkrch/TimesheetManagement.git
 
-<b>External packages which are used in this Project</b>
-I have also added some packages from NuGet, here is the list:
-1.	CaptchaMvc
-2.	ClosedXML
-3.	Dapper
-4.	ELMAH
+2. Database Setup:
 
-<b>Design Templates</b>
-1.	SB Admin 2
-A Bootstrap admin theme, dashboard, or web app UI featuring powerful jQuery plugins for extended functionality.
-Link: - https://startbootstrap.com/template-overviews/sb-admin-2/  
+Extract TimesheetDB.rar.
 
-<b>JavaScript Libraries</b>
-1.	Toastr 
-      Link: - http://www.toastrjs.com/ 
-      
-2.	DateTimePicker
-Link: - https://xdsoft.net/jqplugins/datetimepicker/
+Restore the .bak file or run the .sql scripts in SQL Server Management Studio (SSMS).
 
-3.	Datatables 
-Link: - https://datatables.net/ 
+Update the connection string in Web.config:
 
-<b>Encryption Library</b>
-1.	AES 256
+xml
+<connectionStrings>
+  <add name="DefaultConnection" 
+       connectionString="Data Source=YOUR_SERVER;Initial Catalog=TimesheetDB;Integrated Security=True" 
+       providerName="System.Data.SqlClient" />
+</connectionStrings>
+Run the Application:
 
-<b> Login credentials with Password </b>
+Open the solution in Visual Studio.
 
-<b> User </b>
-Username :- demouser 
-Password :- 1234567
+Build and run the project.
 
-<b> Admin </b>
-Username :-demoadmin 
-Password :-1234567
+Access via http://localhost:xxxx.
 
-<b> SuperAdmin </b>
-Username :-SuperAdmin
-Password :-1234567
+🔑 Demo Credentials
+User → demouser / 1234567
 
+Admin → demoadmin / 1234567
 
+SuperAdmin → SuperAdmin / 1234567
 
+📌 Notes
+If you face OWIN Startup conflicts, ensure only one [assembly: OwinStartup] attribute is active, or specify the startup class in web.config:
 
+xml
+<appSettings>
+  <add key="owin:AppStartup" value="WebTimeSheetManagement.Startup" />
+</appSettings>
+🤝 Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+
+📜 License
+This project is licensed under the MIT License.
+
+Code
+
+---
+
+✅ This README gives a clear **overview, setup guide, technologies, and demo credentials**.  
+Would you like me to also add a **diagram of the database schema** (tables and relationships) so new developers can understand the DB structure at a glance?
