@@ -29,7 +29,8 @@ namespace TimeSheetManagement.Controllers
         [HttpGet]
         public ActionResult Login()
         {
-            return View();
+            LoginViewModel objLoginViewModel = new LoginViewModel();
+            return View(objLoginViewModel);
         }
 
         [HttpPost]
