@@ -1,4 +1,4 @@
-﻿@model WebTimeSheetManagement.Models.MainTimeSheetView
+﻿@model TimeSheetManagement.Models.MainTimeSheetView
 
 @{
     ViewBag.Title = "Details";
@@ -15,22 +15,26 @@
 <p>
     @Html.ActionLink("Back to Main View", "TimeSheet", "AllTimeSheet")
 </p>
-<table style="border:1"  class="table">
+<table class="table">
     <tr>
         <td><b>Project Name</b></td>
         @foreach (var item in Model.ListoDayofWeek)
         {
 
             <td><b>@Html.DisplayFor(modelItem => item)</b></td>
+           
         }
+        <td><b>Description</b></td>
     </tr>
     <tr>
         <td></td>
         @foreach (var item in Model.ListofPeriods)
-            {
+        {
 
             <td><b>@Html.DisplayFor(modelItem => item.Period)</b></td>
         }
+        <td></td>
+        <td></td>
     </tr>
 
 
@@ -40,15 +44,17 @@
             <td><b>@Model.ListofProjectNames[i].ProjectName</b></td>
 
             @{
-                var ListofHours = WebTimeSheetManagement.Helpers.MethodonViews.GetHoursbyTimeSheetMasterID(Model.TimeSheetMasterID, Model.ListofProjectNames[i].ProjectID);
+                var ListofHours = TimeSheetManagement.Helpers.MethodonViews.GetHoursbyTimeSheetMasterID(Model.TimeSheetMasterID, Model.ListofProjectNames[i].ProjectID);
+
+                var ListofDescription = TimeSheetManagement.Helpers.MethodonViews.GetDescriptionbyTimeSheetMasterID(Model.TimeSheetMasterID, Model.ListofProjectNames[i].ProjectID);
 
                 foreach (var item in ListofHours)
                 {
                     <td><b>@Html.DisplayFor(modelItem => item.Hours)</b></td>
                 }
-
+                <td><b>@ListofDescription</b></td>
             }
-        </tr>
-                }
+</tr>
+    }
 
 </table>

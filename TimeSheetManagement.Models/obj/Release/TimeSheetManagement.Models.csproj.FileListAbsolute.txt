@@ -1,0 +1,6 @@
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Models\bin\Release\WebTimeSheetManagement.Models.dll
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Models\bin\Release\WebTimeSheetManagement.Models.pdb
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Models\obj\Release\TimeSheetManagement.Models.csproj.AssemblyReference.cache
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Models\obj\Release\TimeSheetManagement.Models.csproj.CoreCompileInputs.cache
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Models\obj\Release\WebTimeSheetManagement.Models.dll
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Models\obj\Release\WebTimeSheetManagement.Models.pdb

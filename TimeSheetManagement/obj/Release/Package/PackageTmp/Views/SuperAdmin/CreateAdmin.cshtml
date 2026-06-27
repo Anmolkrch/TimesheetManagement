@@ -1,19 +1,19 @@
-﻿@model WebTimeSheetManagement.Models.Registration
+﻿@model TimeSheetManagement.Models.Registration
 @using CaptchaMvc.HtmlHelpers
 @{
     ViewBag.Title = "CreateAdmin";
     Layout = "~/Views/Shared/_LayoutSuperAdmin.cshtml";
 }
 
-<div class="container">
-    <br />
+<h4 class="page-header">Create Admin User</h4>
+ 
     <div class="panel panel-default">
         <div class="panel-heading">Create Admin User</div>
         <div class="panel-body">
 
             @if (TempData["MessageRegistration"] != null)
             {
-                <p class="alert alert-success" id="successMessage">@TempData["MessageRegistration"] <a class="btn btn-success" href="/Login/Login">Go To Sign in </a></p>
+                <p class="alert alert-success" id="successMessage">@TempData["MessageRegistration"]</p>
             }
 
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" style="margin-top:20px;">
                         @Html.LabelFor(model => model.Gender, htmlAttributes: new { @class = "control-label manadatory" })
                         @Html.RadioButtonFor(model => model.Gender, "M") @Html.Label("", "Male")
                         @Html.RadioButtonFor(model => model.Gender, "F") @Html.Label("", "Female")
@@ -72,20 +72,15 @@
                         @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div id="captcha" class="captcha">
-                            @Html.Captcha("Refresh", "Enter the text you see above", 5, "Is required field.", true)
-                        </div>
-                    </div>
-                </div>
-                <br />
+     <br />
                 <div class="row">
                     <div class="form-group">
                         <div class="col-md-10">
                             <input type="submit" value="Create Admin" class="btn btn-success" />
-
                             @Html.ActionLink("Clear", "CreateAdmin", "SuperAdmin", null, new { @class = "btn btn-danger" })
+
+                            @Html.ActionLink("All Admin", "admin", "AllUsers", null, new { @class = "btn btn-info" })
+                            
                         </div>
                     </div>
                 </div>
@@ -93,7 +88,6 @@
 
         </div>
     </div>
-</div>
 
 
 

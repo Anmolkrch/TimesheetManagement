@@ -1,4 +1,4 @@
-﻿@model WebTimeSheetManagement.Models.ExpenseModel
+﻿@model TimeSheetManagement.Models.ExpenseModel
 
 @{
     ViewBag.Title = "Add";
@@ -101,11 +101,20 @@
                     @Html.ValidationMessageFor(model => model.VoucherID, "", new { @class = "text-danger" })
                 </div>
                 <div class="col-md-3">
-                    @Html.LabelFor(model => model.FileName, new { @class = "manadatory" })
-                    <input type="file" onchange="ValidateFile(this);" required class="form-control" name="file" id="file" />
+                    @Html.Label(".Zip Attachments", new { @class = "manadatory" })
+                    <input type="file" onchange="ValidateFile(this);"  class="form-control" name="file" id="file" />
                     <span id="val_file" class="text-danger"></span>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-3">
+                    @Html.Label("Single Attachment", new { @class = "manadatory" })
+                    <input type="file" onchange="ValidateImagesOnly(this);" class="form-control" name="Singlefile" id="Singlefile" />
+                    <span id="val_fileSingle" class="text-danger"></span>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
                     <br />
                     @Html.Label("[Scan Copies of Hotel, Travel, Meals, Mobile, Transport, Miscellaneous Bills Zip Them and Upload Zip]", new { @class = "text-danger" })
                 </div>

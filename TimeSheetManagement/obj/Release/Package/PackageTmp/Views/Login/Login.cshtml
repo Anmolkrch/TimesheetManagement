@@ -1,10 +1,16 @@
-﻿@model WebTimeSheetManagement.Models.LoginViewModel
+﻿@model TimeSheetManagement.Models.LoginViewModel
 @using CaptchaMvc.HtmlHelpers  
 @{
     ViewBag.Title = "Login";
     Layout = "~/Views/Shared/_LayoutLogin.cshtml";
 }
 
+<style>
+
+    #CaptchaInputText {
+        text-transform: uppercase;
+    }
+</style>
 
 
 @using (Html.BeginForm())
@@ -59,6 +65,23 @@
             </div>
 
         </div>
-        
+         <div class="form-group">
+             <div class="col-md-offset-0 col-md-10">
+                 Login credentials with Password
+                 <br />  <br />
+                 <b>User</b>
+                 <br />Username :- demouser
+                 <br />Password :- 1234567
+                 <br />
+                 <b>Admin</b>
+                 <br />Username :-demoadmin
+                 <br />Password :-1234567
+                 <br />
+                 <b>SuperAdmin</b>
+                 <br />Username :-SuperAdmin
+                 <br />Password :-1234567
+             </div>
+
+        </div>
     </div>
 }

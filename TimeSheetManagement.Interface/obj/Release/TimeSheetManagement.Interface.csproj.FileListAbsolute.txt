@@ -1,0 +1,9 @@
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Interface\bin\Release\TimeSheetManagement.Interface.dll
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Interface\bin\Release\TimeSheetManagement.Interface.pdb
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Interface\bin\Release\WebTimeSheetManagement.Models.dll
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Interface\bin\Release\WebTimeSheetManagement.Models.pdb
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Interface\obj\Release\TimeSheetManagement.Interface.csproj.AssemblyReference.cache
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Interface\obj\Release\TimeSheetManagement.Interface.csproj.CoreCompileInputs.cache
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Interface\obj\Release\TimeShee.2CB04399.Up2Date
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Interface\obj\Release\TimeSheetManagement.Interface.dll
+C:\Anmol\Git\Timesheet\TimeSheetManagement.Interface\obj\Release\TimeSheetManagement.Interface.pdb

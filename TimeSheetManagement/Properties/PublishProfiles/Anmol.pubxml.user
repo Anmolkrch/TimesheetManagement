@@ -7,6 +7,8 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>C:\Client\PublishSite\Timesheet</_PublishTargetUrl>
+    <History>False|2026-06-27T17:43:30.2913517Z||;</History>
+    <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -37,7 +39,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/16/2014 20:05:14</publishTime>
     </File>
     <File Include="bin/Dapper.dll">
-      <publishTime>04/16/2026 02:27:37</publishTime>
+      <publishTime>07/22/2016 20:22:40</publishTime>
     </File>
     <File Include="bin/DocumentFormat.OpenXml.dll">
       <publishTime>08/04/2013 18:51:24</publishTime>
@@ -190,25 +192,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/28/2015 09:34:30</publishTime>
     </File>
     <File Include="bin/TimeSheetManagement.Concrete.dll">
-      <publishTime>04/16/2026 15:14:00</publishTime>
+      <publishTime>06/27/2026 23:13:26</publishTime>
     </File>
     <File Include="bin/TimeSheetManagement.Concrete.dll.config">
       <publishTime>04/16/2026 02:27:58</publishTime>
     </File>
     <File Include="bin/TimeSheetManagement.Concrete.pdb">
-      <publishTime>04/16/2026 15:14:00</publishTime>
+      <publishTime>06/27/2026 23:13:26</publishTime>
     </File>
     <File Include="bin/TimeSheetManagement.dll">
-      <publishTime>04/16/2026 15:14:15</publishTime>
+      <publishTime>06/27/2026 23:14:47</publishTime>
     </File>
     <File Include="bin/TimeSheetManagement.Interface.dll">
-      <publishTime>04/16/2026 15:13:58</publishTime>
+      <publishTime>06/27/2026 23:13:26</publishTime>
     </File>
     <File Include="bin/TimeSheetManagement.Interface.pdb">
-      <publishTime>04/16/2026 15:13:58</publishTime>
+      <publishTime>06/27/2026 23:13:26</publishTime>
     </File>
     <File Include="bin/TimeSheetManagement.pdb">
-      <publishTime>04/16/2026 15:14:15</publishTime>
+      <publishTime>06/27/2026 23:14:47</publishTime>
     </File>
     <File Include="bin/Vse.Web.Serialization.dll">
       <publishTime>04/20/2017 19:54:52</publishTime>
@@ -229,10 +231,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/08/2017 09:56:57</publishTime>
     </File>
     <File Include="bin/WebTimeSheetManagement.Models.dll">
-      <publishTime>04/16/2026 15:13:58</publishTime>
+      <publishTime>06/27/2026 23:13:25</publishTime>
     </File>
     <File Include="bin/WebTimeSheetManagement.Models.pdb">
-      <publishTime>04/16/2026 15:13:58</publishTime>
+      <publishTime>06/27/2026 23:13:25</publishTime>
     </File>
     <File Include="Content/bootstrap-grid.css">
       <publishTime>04/16/2026 02:30:17</publishTime>
@@ -376,7 +378,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/16/2026 02:57:55</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>04/16/2026 02:34:31</publishTime>
+      <publishTime>06/27/2026 23:14:14</publishTime>
     </File>
     <File Include="Scripts/ajaxjquery.min.js">
       <publishTime>04/16/2026 02:27:37</publishTime>
@@ -1159,7 +1161,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/16/2026 02:27:37</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/16/2026 15:16:25</publishTime>
+      <publishTime>06/27/2026 23:14:47</publishTime>
     </File>
   </ItemGroup>
 </Project>

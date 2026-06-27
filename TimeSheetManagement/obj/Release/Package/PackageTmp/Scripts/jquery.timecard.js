@@ -1,11 +1,15 @@
-﻿$(document).ready(function () {
+﻿$(document).ready(function ()
+{
+  
     $("#_panelmain").hide();
+    $("#_panelmainbutton").hide();
     DisableonLoad();
     $("#datepicker_start").datepicker(
     {
         dateFormat: "yy-mm-dd",
         changeMonth: true,
         changeYear: true,
+        constrainInput: false,
         yearRange: new Date().getFullYear() + ':' + new Date().getFullYear(),
         onSelect: function (selectedDate) {
             CheckIsDateAlreadyUsed(selectedDate);
@@ -15,8 +19,11 @@
             return [date.getDay() === 0, ''];
         }
     });
-
-
+    $("#datepicker_start").keydown(false);
+    $("#datepicker_start").keypress(false);
+    $('#datepicker_start').bind("cut copy paste", function (e) {
+        e.preventDefault();
+    });
 });
 
 
@@ -169,7 +176,9 @@ function CheckIsDateAlreadyUsed(selectedDate) {
                 $("#text5").val('');
                 $("#text6").val('');
                 $("#text7").val('');
+                
                 $("#_panelmain").hide();
+                $("#_panelmainbutton").hide();
                 alert("You have already filled Details for Choosen Date !");
 
             }
@@ -177,6 +186,7 @@ function CheckIsDateAlreadyUsed(selectedDate) {
                 var date2 = $('#datepicker_start').datepicker('getDate', '+1');
                 CalEnd();
                 $("#_panelmain").show();
+                $("#_panelmainbutton").show();
             }
         }
     });

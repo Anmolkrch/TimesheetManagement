@@ -1,4 +1,4 @@
-﻿@model WebTimeSheetManagement.Models.ExpenseModelView
+﻿@model TimeSheetManagement.Models.ExpenseModelView
 
 @{
     ViewBag.Title = "Details";
@@ -8,7 +8,7 @@
 <script src="~/Scripts/ajaxjquery.min.js"></script>
 <script src="~/Scripts/jquery.expense.js"></script>
 
-<h2>Details</h2>
+<h4 class="page-header">Details</h4>
 <p>
     @Html.ActionLink("Back to Main View", "Expense", "ShowAllExpense", null, new { @class = "btn btn-default" })
 </p>
@@ -87,13 +87,35 @@
             </div>
             <div class="col-md-3">
                 @Html.Label("Download")
-                <br />
-                @Html.ActionLink("Download zip", "Download", "ShowAllExpense", new { id = Model.ExpenseID }, new { @class = "btn btn-primary" })
+           
+
+                @{
+                    var documents = (List<TimeSheetManagement.Models.DocumentsVM>)ViewBag.documents;
+
+                    foreach (var document in documents)
+                    {
+                        var filename = document.DocumentType + " Document";
+                
+
+                        var link = "/ShowAllExpense/Download?id=" + Model.ExpenseID + "&DocumentID=" + document.DocumentID;
+                        <h5>
+                            <a href="@link">
+                                <i class="fa fa-download fa-fw"></i>@filename
+                            </a>
+                        </h5>
+
+                    }
+
+                }
+
+
+
+
             </div>
         </div>
         <div class="row">
             <div class="col-md-3">
-               @Html.Label("Comment", new { @class = "manadatory" })
+                @Html.Label("Comment", new { @class = "manadatory" })
                 @Html.TextArea("Comment", null, new { @class = "form-control", @maxlength = "30" })
             </div>
             <div class="col-md-6">
